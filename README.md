@@ -51,7 +51,7 @@ The Digital Humanities Hub focuses on collaborative triple helix working across 
 
 This piece of work was inspired and motivated by collaboration with the 'Deep Mapping the Lake District' project, which is part of the 'Geospatial Innovation in the Digital Humanities' initiative (see http://wp.lancs.ac.uk/lakesdeepmap/) involving Lancaster University and the University of Birmingham.
 
-The Lake District panorama was photographed by Chris Donaldson from the 'Mapping the Lakes' project. He took it on Beacon Fell and the lake is Coniston Water from the south. The three higher summits to the west of the lake are Dow Crag, Coniston Old Man, and Wetherlam.
+The Lake District panorama was photographed by Chris Donaldson from the 'Deep Mapping the Lake District' project. He took it on Beacon Fell and the lake is Coniston Water from the south. The three higher summits to the west of the lake are Dow Crag, Coniston Old Man, and Wetherlam.
 
 Programming of the 3D scene used the excellent Three.js JavaScript library at http://threejs.org/ and the Google Cardboard, stereo and anaglyph effects came from it too. We've adapted the three.js file (at lines 17400 to 17403) to allow the eye separation to be adjusted in the stereo camera, and so renamed it cake_three.js. That helps give a better stereo effect for a large scene.
 
