@@ -55,7 +55,7 @@ The Lake District panorama was photographed by Chris Donaldson from the 'Mapping
 
 Programming of the 3D scene used the excellent Three.js JavaScript library at http://threejs.org/ and the Google Cardboard, stereo and anaglyph effects came from it too. We've adapted the three.js file (at lines 17400 to 17403) to allow the eye separation to be adjusted in the stereo camera, and so renamed it cake_three.js. That helps give a better stereo effect for a large scene.
 
-The Oculus Rift effect was based on the one written by troffmo5 on GitHub (http://github.com/troffmo5). It's basically as found on GitHub but changed slightly (at lines 124 to 127) to allow for some change in the eye separation for a better 3D effect on the Oculus Rift).
+The Oculus Rift effect was based on the one written by troffmo5 on GitHub (http://github.com/troffmo5). It's basically as found on GitHub but changed slightly (at lines 124 to 127) to allow for some change in the eye separation for a better 3D effect on the Oculus Rift.
 
 The background sounds and scream were taken from the internet as public domain files, and were downloaded from SoundBible (http://soundbible.com/).
 
