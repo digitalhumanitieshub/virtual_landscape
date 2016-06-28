@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>DHH June CAKE demo fo Oculus</title>
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+  <style>
+    body {overflow: hidden;}
+    canvas
+    {
+      outline: 0px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+    }
+    div#preload {display: none;}
+  </style>
+  <script>
+    var effect,renderer,pxratio=1,stereoaspect=1;
+    // We've modified the Oculus Rift effect javascript file so that eyeseparation
+    // is a factor to scale the real-world eye distance by. A value of 2 gives a much
+    // more 3D effect for a big scene, but is a little harder to focus in to. It can
+    // be set to 1, or removed, to get the usual view from the Oculus effect.
+    var eyeseparation=2;
+  </script>
+</head>
+<body onLoad="init()">
+	<div id="sphere"></div>
+	<script src="./cake_three.js"></script>
+  <script src="./cake_OculusRiftEffect.js"></script>
+	<script src="./Detector.js"></script>		
+	<script src="./fullscreen.js"></script>		
+	<script src="./cake3d.js"></script>
+  <script>
+    renderer=Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRenderer();
+    effect = new THREE.OculusRiftEffect(renderer,{worldScale: 1});
+    // pxratio needs to be less than or equal to one, or it'll just slow things down
+    // without any benefit. The smaller the value the less detail there will be, but
+    // the faster the action (so useful for small and low-powered devices). To use
+    // the full resolution of your screen set it to one.
+    pxratio=1;
+  </script>
+  <div id="preload">
+    <img src="lakeback.jpg" width="1" height="1" alt="Image" />
+    <img src="grass.jpg" width="1" height="1" alt="Image" />
+    <img src="landing.jpg" width="1" height="1" alt="Image" />
+    <img src="sphere_0.jpg" width="1" height="1" alt="Image" />
+    <img src="sphere_1.jpg" width="1" height="1" alt="Image" />
+    <img src="sphere_2.jpg" width="1" height="1" alt="Image" />
+    <img src="sphere_3.jpg" width="1" height="1" alt="Image" />
+    <img src="sphere_4.jpg" width="1" height="1" alt="Image" />
+    <img src="sphere_5.jpg" width="1" height="1" alt="Image" />
+    <img src="sphere_6.jpg" width="1" height="1" alt="Image" />
+    <img src="sphere_7.jpg" width="1" height="1" alt="Image" />
+    <img src="sphere_8.jpg" width="1" height="1" alt="Image" />
+    <img src="sphere_9.jpg" width="1" height="1" alt="Image" />
+  </div>
+</body>
+</html>
